@@ -1,0 +1,18 @@
+#to initialize git
+git init
+
+#to check the git status
+git status
+
+#ones we initialize the git, an emplty git repo will initialized and a folder will apear
+.git
+
+git status
+#still the file is untracked, and are in our file system(local system)
+#by removing it we can't recover
+
+#it's time to move from untracked to stage
+git add .
+git add file_name
+
+ 
