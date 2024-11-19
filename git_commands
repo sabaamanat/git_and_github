@@ -1,18 +1,40 @@
 #to initialize git
-git init
+	git init
 
 #to check the git status
-git status
+	git status
 
 #ones we initialize the git, an emplty git repo will initialized and a folder will apear
-.git
+	.git
 
-git status
+	git status
 #still the file is untracked, and are in our file system(local system)
 #by removing it we can't recover
 
 #it's time to move from untracked to stage
-git add .
-git add file_name
+	git add .
+	git add file_name
 
- 
+#WE HAVE 2 OPTIONS 
+#WE CAN TRACK THIS FILE FROM STAGE 
+#OR
+#WE CAN UNSTAGE IT FROM STAGE TO UNTRACK
+
+#to unstage
+	git rm --cached <file_name>
+
+#to Track
+	git commit -m "v1"
+
+#TIME TO PUSH CODE FROM LOCAL TO GITHUB REPO
+#
+#create a repo on github with the same name which we have created on local
+
+	git remote add origin REPO_URL
+
+#InCASE if we have access of the remote_repo
+
+	git remote set_url origin https://github_TOKEN@github.com/username/github_repo_name.git
+
+#to push
+	git push origin master

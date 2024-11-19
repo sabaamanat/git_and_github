@@ -1,0 +1,32 @@
+#ERROR 1
+# INPUT
+git commit -m "v1"
+
+#O/P
+
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'root@user_name.(none)')
+
+SOLUTION:
+
+STEP; 1
+
+	 git config --global user.email "your-email@example.com"
+
+STEP; 2
+	git config --global user.name "Your Name"
+
+STEP; 3
+	git commit -m "v1"
+
