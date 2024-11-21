@@ -38,3 +38,29 @@
 
 #to push
 	git push origin master
+
+           ###  GIT BRANCHES ### 
+
+TO check the existing branch
+	git branch
+
+To create a new branch
+	git branch new_branch_name
+
+To create new_branch and checkout/switch to that
+	git checkout -B branch_name
+
+To switch the other branch
+	git switch branch_name
+
+To list Remote Branches in Git
+	git branch -r
+	git branch -a
+	git ls-remote
+
+To push this branch at github
+	git push origin branch_name
+
+
+
+
